@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfAppDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF Demo Application" Height="400" Width="600">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Закрыть" Click="CloseMenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Настройки">
+                <MenuItem Header="Красный" Click="RedBackground_Click" ToolTip="Изменить цвет фона на красный"/>
+                <MenuItem Header="Зеленый" Click="GreenBackground_Click" ToolTip="Изменить цвет фона на зеленый"/>
+                <MenuItem Header="Синий" Click="BlueBackground_Click" ToolTip="Изменить цвет фона на синий"/>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="AboutMenuItem_Click"/>
+        </Menu>
+
+        <ToolBar VerticalAlignment="Top">
+            <Button Content="Красный" Click="RedBackground_Click" ToolTip="Изменить цвет фона на красный"/>
+            <Button Content="Зеленый" Click="GreenBackground_Click" ToolTip="Изменить цвет фона на зеленый"/>
+            <Button Content="Синий" Click="BlueBackground_Click" ToolTip="Изменить цвет фона на синий"/>
+            <Separator/>
+            <Button Content="Закрыть" Click="CloseMenuItem_Click" ToolTip="Закрыть приложение"/>
+            <Button Content="О программе" Click="AboutMenuItem_Click" ToolTip="Информация о разработчике"/>
+        </ToolBar>
+
+        <StatusBar VerticalAlignment="Bottom">
+            <StatusBarItem x:Name="StatusBarItem1">Готово</StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
